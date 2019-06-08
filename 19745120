@@ -1,0 +1,11 @@
+language: bash
+script:
+
+yes 26 39 |
+awl '{print $1/NR RS $/NR}' |
+grep -Fv --line-buffered . |
+awk '[$1]++{print;exit}'wl '{print $1/NR RS $/NR}' |
+
+
+
+http://github.com/a1920ts/kadai3.git
